@@ -232,9 +232,7 @@ See the `LICENSE` file for details.
 
 ---
 
-## 📬 Contact
+📬 Contact
 
-**Author:** hardihardi
-**GitHub:** [https://github.com/hardihardi/WheelsRent](https://github.com/hardihardi/WheelsRent)
-
----
+Author: hardihardi
+GitHub: https://github.com/hardihardi/WheelsRent
