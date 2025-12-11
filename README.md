@@ -238,5 +238,3 @@ See the `LICENSE` file for details.
 **GitHub:** [https://github.com/hardihardi/WheelsRent](https://github.com/hardihardi/WheelsRent)
 
 ---
-
-```
