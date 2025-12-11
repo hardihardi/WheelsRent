@@ -31,7 +31,7 @@ WheelsRent is a complete web-based platform for managing car rentals. It include
 ## 🚀 Features
 
 - User registration & authentication  
-- Browse available cars with details (brand, model, price, availability)  
+- Browse available cars (brand, model, price, availability)  
 - Search & filter vehicles  
 - Book vehicles for selected dates  
 - Admin dashboard with CRUD operations  
@@ -56,12 +56,14 @@ WheelsRent is a complete web-based platform for managing car rentals. It include
 
 ## 🏗 Architecture
 
+```
+
 ┌─────────────────────────────────────┐
 |             Browser / Client         |
-| (Bootstrap UI, HTML, CSS, JS)        |
+|     (Bootstrap UI, HTML, CSS, JS)    |
 └─────────────────────────────────────┘
-                 ▲
-                 ▼
+▲
+▼
 ┌─────────────────────────────────────┐
 |              Laravel MVC             |
 | • Models (Eloquent)                  |
@@ -69,17 +71,17 @@ WheelsRent is a complete web-based platform for managing car rentals. It include
 | • Views (Blade Templates)            |
 | • Routes                             |
 └─────────────────────────────────────┘
-                 ▲
-                 ▼
+▲
+▼
 ┌─────────────────────────────────────┐
-|               MySQL Database         |
+|             MySQL Database           |
 | • Users                              |
 | • Cars                               |
 | • Bookings                           |
 | • Locations                          |
 └─────────────────────────────────────┘
-MySQL Database
 
+````
 
 ---
 
@@ -92,24 +94,40 @@ Follow these steps to install the project locally:
 ```bash
 git clone https://github.com/hardihardi/WheelsRent.git
 cd WheelsRent
+````
 
-2. Install PHP dependencies
+### 2. Install PHP dependencies
+
+```bash
 composer install
+```
 
-3. Install Node modules (if applicable)
+### 3. Install Node modules (if applicable)
+
+```bash
 npm install
 npm run dev
+```
 
-4. Copy environment file
+### 4. Copy environment file
+
+```bash
 cp .env.example .env
+```
 
-5. Generate the application key
+### 5. Generate application key
+
+```bash
 php artisan key:generate
+```
 
-🔧 Configuration
+---
 
-Edit your .env file and set your database credentials:
+## 🔧 Configuration
 
+Edit your `.env` file and set your database credentials:
+
+```env
 APP_NAME=WheelsRent
 APP_ENV=local
 APP_KEY=base64:...
@@ -122,74 +140,103 @@ DB_PORT=3306
 DB_DATABASE=wheelsrent
 DB_USERNAME=root
 DB_PASSWORD=
+```
 
+Run migrations and seeders:
 
-Run database migrations:
-
+```bash
 php artisan migrate
 php artisan db:seed
+```
 
-▶️ Usage
+---
 
-Start the local development server:
+## ▶️ Usage
 
+Start the development server:
+
+```bash
 php artisan serve
-
+```
 
 Open the application in your browser:
 
-➡️ http://127.0.0.1:8000
+➡️ [http://127.0.0.1:8000](http://127.0.0.1:8000)
 
-From here, users can register, browse cars, and make bookings.
-Admins can access the dashboard to manage vehicles, users, and bookings.
+Users can:
 
-🖼 Screenshots
+* Register an account
+* Browse cars
+* Make bookings
 
-Add your UI screenshots here.
+Admins can:
 
-Example:
+* Manage vehicles
+* Manage users
+* Manage bookings
 
-/screenshots/homepage.png  
+---
+
+## 🖼 Screenshots
+
+Add your UI screenshots here:
+
+```
+/screenshots/homepage.png
 /screenshots/admin-dashboard.png
+```
 
-🧪 Testing
+---
+
+## 🧪 Testing
 
 Run application tests:
 
+```bash
 php artisan test
+```
 
-🚢 Deployment
+---
+
+## 🚢 Deployment
 
 For production deployment:
 
+```bash
 composer install --optimize-autoloader --no-dev
 npm run build
 php artisan migrate --force
 php artisan optimize
+```
 
+Ensure your server points to the **/public** directory.
 
-Ensure your server points to the /public directory.
+---
 
-🤝 Contributing
+## 🤝 Contributing
 
 Contributions are welcome!
 
-Fork the repository
+1. Fork the repository
+2. Create a new branch
+3. Make your changes
+4. Commit and push
+5. Open a Pull Request
 
-Create a new branch
+---
 
-Make your changes
+## 📄 License
 
-Commit and push
+This project is licensed under the **MIT License**.
+See the `LICENSE` file for details.
 
-Open a Pull Request
+---
 
-📄 License
+## 📬 Contact
 
-This project is licensed under the MIT License.
-See the LICENSE file for more information.
+**Author:** hardihardi
+**GitHub:** [https://github.com/hardihardi/WheelsRent](https://github.com/hardihardi/WheelsRent)
 
-📬 Contact
+---
 
-Author: hardihardi
-GitHub: https://github.com/hardihardi/WheelsRent
+```
